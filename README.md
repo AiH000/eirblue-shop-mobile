@@ -35,19 +35,20 @@ Tugas 7
 
 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist-checklist di atas.
     - Membuat sebuah program Flutter baru dengan tema E-Commerce yang sesuai dengan tugas-tugas sebelumnya.
-        : Menjalankan command "flutter run eirblue_shop"
+        :: Menjalankan command "flutter run eirblue_shop"
     - Membuat tiga tombol sederhana dengan ikon dan teks untuk:
         - Melihat daftar produk (Lihat Daftar Produk)
         - Menambah produk (Tambah Produk)
         - Logout (Logout)
-        :   - Membentuk class ItemHomePage yang mengambil parameter String nama dan Icon icon
+        ::   
+            - Membentuk class ItemHomePage yang mengambil parameter String nama dan Icon icon
             - Menambahkan list item ItemHomePage dengan nama "Lihat Daftar Produk", "Tambah Produk", dan "Logout" dengan icon yang sesuai pada class MyHomePage
             - Membentuk class ItemCard yang menerima parameter item untuk menampilkan kartu dengan nama dan ikon sesuai item
             - Menambahkan item sebagai children dari GridView di MyHomePage dengan return sebagai ItemCard
     - Mengimplementasikan warna-warna yang berbeda untuk setiap tombol (Lihat Daftar Produk, Tambah Produk, dan Logout).
-        : Menambahkan parameter color pada ItemHomePage yang selanjutnya dipakai sebagai color Material dengan Widget build() di class ItemCard
+        :: Menambahkan parameter color pada ItemHomePage yang selanjutnya dipakai sebagai color Material dengan Widget build() di class ItemCard
     - Memunculkan Snackbar dengan tulisan:
         - "Kamu telah menekan tombol Lihat Daftar Produk" ketika tombol Lihat Daftar Produk ditekan.
         - "Kamu telah menekan tombol Tambah Produk" ketika tombol Tambah Produk ditekan.
         - "Kamu telah menekan tombol Logout" ketika tombol Logout ditekan.
-        : Tambahkan event handler onTap() pada class ItemCard yang akan menjalankan method showSnackBar(SnackBar(content: Text("Kamu telah menekan tombol ${item.name}!")))
+        :: Tambahkan event handler onTap() pada class ItemCard yang akan menjalankan method showSnackBar(SnackBar(content: Text("Kamu telah menekan tombol ${item.name}!")))
