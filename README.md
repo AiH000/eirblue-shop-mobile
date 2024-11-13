@@ -52,3 +52,34 @@ Tugas 7
         - "Kamu telah menekan tombol Tambah Produk" ketika tombol Tambah Produk ditekan.
         - "Kamu telah menekan tombol Logout" ketika tombol Logout ditekan.
         :: Tambahkan event handler onTap() pada class ItemCard yang akan menjalankan method showSnackBar(SnackBar(content: Text("Kamu telah menekan tombol ${item.name}!")))
+
+Tugas 8
+
+1. Apa kegunaan const di Flutter? Jelaskan apa keuntungan ketika menggunakan const pada kode Flutter. Kapan sebaiknya kita menggunakan const, dan kapan sebaiknya tidak digunakan?
+    Kegunaan const di flutter adalah untuk mendeklarasikan objek yang valuenya konstan pada compile time.
+    Keuntungan menggunakan const adalah mengurangi alokasi memori dan waktu eksekusi karena objek const hanya dibuild sekali.
+    Const sebaiknya digunakan ketika objek tidak akan berubah valuenya dan tidak digunakan ketika value dari objek dapat berubah, seperti variabel yang valuenya bergantung pada input user
+
+2. Jelaskan dan bandingkan penggunaan Column dan Row pada Flutter. Berikan contoh implementasi dari masing-masing layout widget ini!
+    Column dan row adalah widget layout. Column menyusung item secara vertikal, sedangkan row menyusun item secara horizontal.
+    Contoh implementasi column:
+        Column(
+            children: <Widget>[],
+        )
+        // Pada aplikasi ini, contohnya seperti saat menampilkan field input untuk form product entry
+    Contoh implementasi row:
+        Row(
+            children: <Widget>[],
+        )
+        // Pada aplikasi ini, contohnya seperti saat menampilkan InfoCard NPM, Name, dan Class
+
+3. Sebutkan apa saja elemen input yang kamu gunakan pada halaman form yang kamu buat pada tugas kali ini. Apakah terdapat elemen input Flutter lain yang tidak kamu gunakan pada tugas ini? Jelaskan!
+    Elemen input yang digunakan: TextFormField
+    Contoh elemen input yang tidak digunakan: CheckBox
+
+4. Bagaimana cara kamu mengatur tema (theme) dalam aplikasi Flutter agar aplikasi yang dibuat konsisten? Apakah kamu mengimplementasikan tema pada aplikasi yang kamu buat?
+    Pada main.dart, dibuat variabel theme dengan ThemData yang kemudian valuenya bisa diakses dari tempat lain, seperti saat ingin membuat background color dari setiap laman sama.
+
+
+5. Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
+    Dengan membuat left_drawer yang dapat digunakan untuk mengakses beberapa laman dan juga push() dan pop().
