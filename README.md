@@ -83,3 +83,22 @@ Tugas 8
 
 5. Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
     Dengan membuat left_drawer yang dapat digunakan untuk mengakses beberapa laman dan juga push() dan pop().
+
+Tugas 9
+
+1. Jelaskan mengapa kita perlu membuat model untuk melakukan pengambilan ataupun pengiriman data JSON? Apakah akan terjadi error jika kita tidak membuat model terlebih dahulu?
+    Untuk membuat representasi data dan struktur juga mempermudah proses parsing, pengelolaan data, dan validasi data.
+    Jika tidak membuat model, dapat terjadi error
+
+2. Jelaskan fungsi dari library http yang sudah kamu implementasikan pada tugas ini
+    Agar flutter dapat melakukan permintaan dan menangani respons http karena pada django masih dalam http bukan https
+
+3. Jelaskan fungsi dari CookieRequest dan jelaskan mengapa instance CookieRequest perlu untuk dibagikan ke semua komponen di aplikasi Flutter.
+    CookieRequest ada untuk mengelola cookie dan dapat memastikan sesi pengguna tetap konsisten.
+    Untuk dapat dibagikan, CookieRequest perlu dicreate pada Provider.
+
+4. Jelaskan mekanisme pengiriman data mulai dari input hingga dapat ditampilkan pada Flutter.
+    Pertama mengambil input dari pengguna menggunakan form lalu input tersebut diolah dan dari list data itu ditampilkan pada UI.
+
+5. Jelaskan mekanisme autentikasi dari login, register, hingga logout. Mulai dari input data akun pada Flutter ke Django hingga selesainya proses autentikasi oleh Django dan tampilnya menu pada Flutter.
+    Pertama mengambil input dari flutter menggunakan form login dan register. Kemudian input itu dikirim ke Django untuk diproses pada function di views. Django kemudian mengirim respons http dengan pesan yang sesuai kembali ke flutter untuk ditampilkan.
